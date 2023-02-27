@@ -139,6 +139,8 @@ $query->bindParam(":id", $_GET["id"], PDO::PARAM_INT);
                     <option <?= isset($dimension) && $dimension === "90 X 190" ? "selected" : "" ?> value="90 X 190">90 X 190</option>
                     <option <?= isset($dimension) && $dimension === "140 X 190" ? "selected" : "" ?> value="140 X 190">140 X 190</option>
                     <option <?= isset($dimension) && $dimension === "160 X 200" ? "selected" : "" ?> value="160 X 200">160 X 200</option>
+                    <option <?= isset($dimension) && $dimension === "180 X 200" ? "selected" : "" ?> value="180 X 200">180 X 200</option>
+                    <option <?= isset($dimension) && $dimension === "200 X 200" ? "selected" : "" ?> value="200 X 200">200 X 200</option>
 
                 </select>
             </div>

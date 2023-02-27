@@ -12,14 +12,19 @@ include("templates/header.php")
 ?>
 <div class="titre">
     <h1>Catalogue</h1>
-    <a href="formulaire.php">Ajouter un matelas</a>
+    <div class="liens">
+        <a href="formulaire.php">Ajouter un matelas</a>
+        <a href="modifier.php">Modifier un matelas</a>
+        <a href="supprimer.php">Supprimer un matelas</a>
+    </div>
+
 </div>
 
 <?php
 foreach ($matelas as $matela) {
 ?>
     <div class="catalogue">
-        <div class="img cont">
+        <div class="img cont-img">
             <img src="img/matelats/<?= $matela["image"] ?>" alt="">
         </div>
 
@@ -28,12 +33,12 @@ foreach ($matelas as $matela) {
         </div>
 
         <div class="dimensions cont">
-            <p><?= $matela["dimension"]?></p>
+            <p><?= $matela["dimension"] ?></p>
         </div>
 
-        <div class="prix cont">
-            <p class="nopromo"><?= $matela["prix"]?></p>
-            <p><?= $matela["prix_promo"]?></p>
+        <div class="prix cont-prix">
+            <p class="nopromo"><?= $matela["prix"] ?>€</p>
+            <p class="promo"><?= $matela["prix_promo"] ?>€</p>
 
         </div>
 
@@ -42,6 +47,13 @@ foreach ($matelas as $matela) {
 <?php
 }
 ?>
+<div class="text">
+    <h1>Vous y découvrirez toutes nos dimensions :</h1>
+    <p>90 X 190, 140 X 190, 160 X 200, 180 X 200, 200 X 200</p>
+    <h1>et toutes nos marques de matelats :</h1>
+    <p>Epeda, Dreamway, Bultex, Dorsolinen MemoryLine</p>
+</div>
+
 
 
 </div>

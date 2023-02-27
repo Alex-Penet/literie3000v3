@@ -1,4 +1,5 @@
 * {
+  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
   margin: 0;
 }
@@ -12,23 +13,73 @@ body {
 }
 
 .titre {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.titre .liens a {
+  color: rgb(135, 189, 178);
+  margin: 1rem;
+  cursor: pointer;
+}
+.titre .liens :hover {
+  text-decoration: none;
+}
+
+.text {
+  display: flex;
+  margin-top: 10rem;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  padding: 1rem;
   text-align: center;
 }
 
 .catalogue {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   border: 0.1rem solid;
   margin: 1rem 5rem 1rem 5rem;
   background-color: rgb(162, 229, 216);
 }
+.catalogue .name {
+  text-transform: uppercase;
+}
 .catalogue img {
+  margin: 0rem;
+  padding: 0rem;
+  width: 10vh;
+}
+.catalogue .cont-img {
+  border: 0.1rem solid white;
+  width: 20vh;
+  text-align: center;
+}
+.catalogue .cont-prix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.1rem solid white;
+  width: 80%;
   height: 10vh;
+  flex-direction: column;
+}
+.catalogue .cont-prix .promo {
+  color: red;
 }
 .catalogue .cont {
-  padding: 1rem;
+  border: 0.1rem solid white;
+  width: 80%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .catalogue .nopromo {
   text-decoration: line-through;
