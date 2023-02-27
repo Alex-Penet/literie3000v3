@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.titre {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.catalogue {
+  display: flex;
+  justify-content: space-between;
+  border: 0.1rem solid;
+  margin: 1rem 5rem 1rem 5rem;
+  background-color: rgb(162, 229, 216);
+}
+.catalogue img {
+  height: 10vh;
+}
+.catalogue .cont {
+  padding: 1rem;
+}
+.catalogue .nopromo {
+  text-decoration: line-through;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form .form-group {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.form .cont {
+  background-color: rgb(162, 229, 216);
+  padding: 1rem;
+  margin: 1rem;
+  width: 40vh;
+  border: 0.1rem solid;
+  border-radius: 1rem;
+}
+.form .cont label {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.form .cont input {
+  text-align: center;
+  border: 0.1rem solid;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */
