@@ -21,34 +21,40 @@ body {
     flex-direction: column;
     text-align: center;
 
-    .liens{
+    .liens {
 
-        a{
-            color:rgb(135, 189, 178);
+        a {
+            color: rgb(135, 189, 178);
             margin: 1rem;
             cursor: pointer;
         }
 
-        :hover{
+        :hover {
             text-decoration: none;
         }
-  
+
     }
 }
 
-.text{
-   display: flex;
-   margin-top: 10rem;
-   justify-content: center;
-   flex-direction: column;
-   text-align: center;
+.text {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.logo{
+.logo {
     padding: 1rem;
     text-align: center;
 
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 
 .catalogue {
     display: flex;
@@ -58,22 +64,28 @@ body {
     margin: 1rem 5rem 1rem 5rem;
     background-color: rgb(162, 229, 216);
 
-    .name{
+    .name {
         text-transform: uppercase;
     }
+
+    
 
     img {
         margin: 0rem;
         padding: 0rem;
         width: 10vh;
+        height: 100%;
+
     }
-    .cont-img{
+
+    .cont-img {
         border: 0.1rem solid white;
         width: 20vh;
         text-align: center;
+        height: 10vh;
     }
 
-    .cont-prix{
+    .cont-prix {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -81,7 +93,8 @@ body {
         width: 80%;
         height: 10vh;
         flex-direction: column;
-        .promo{
+
+        .promo {
             color: red;
         }
     }
@@ -94,7 +107,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-  
+
     }
 
     .nopromo {
@@ -102,7 +115,9 @@ body {
     }
 }
 
-.form { 
+
+
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,27 +128,95 @@ body {
         text-align: center;
         flex-direction: column;
     }
-    
-    .cont{
+
+    .cont {
         background-color: rgb(162, 229, 216);
 
         padding: 1rem;
         margin: 1rem;
         width: 40vh;
-       
+
         border: 0.1rem solid;
         border-radius: 1rem;
 
-        label{
+        label {
             font-size: 2rem;
             padding: 1rem;
         }
 
-        input{
+        input {
             text-align: center;
             border: 0.1rem solid;
             border-radius: 1rem;
         }
     }
 
+}
+.errors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+}
+
+.matelas{
+    height: 30vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(162, 229, 216);
+    
+
+    margin: 0rem 10rem;
+
+    border: 0.1rem solid;
+    border-radius: 1rem;
+
+    &_img{
+        height: 20vh;
+        img{
+            height: 100%;
+        }
+    }
+    
+    &_informations{
+        border: 0.1rem solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+
+        
+
+        &-marque{
+            font-size: 3rem;
+        }
+
+        &-dimension{
+            align-items: center;
+        }
+        .cont{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+            h1{
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        &-prix{
+   
+            align-items: center;
+
+      
+        }
+
+    }
+
+  
 }

@@ -14,8 +14,6 @@ include("templates/header.php")
     <h1>Catalogue</h1>
     <div class="liens">
         <a href="formulaire.php">Ajouter un matelas</a>
-        <a href="modifier.php">Modifier un matelas</a>
-        <a href="supprimer.php">Supprimer un matelas</a>
     </div>
 
 </div>
@@ -23,30 +21,30 @@ include("templates/header.php")
 <?php
 foreach ($matelas as $matela) {
 ?>
-    <div class="catalogue">
-        <div class="img cont-img">
-            <img src="img/matelats/<?= $matela["image"] ?>" alt="">
+    <a href="verifs.php?id=<?= $matela["id"] ?>" class="a-catalogue">
+        <div class="catalogue">
+            <div class="img cont-img">
+                <img src="img/matelats/<?= $matela["image"] ?>" alt="">
+            </div>
+
+            <div class="name cont">
+                <?= $matela["marque"] ?>
+            </div>
+
+            <div class="dimensions cont">
+                <p><?= $matela["dimension"] ?></p>
+            </div>
+
+            <div class="prix cont-prix">
+                <p class="nopromo"><?= $matela["prix"] ?>€</p>
+                <p class="promo"><?= $matela["prix_promo"] ?>€</p>
+            </div>
         </div>
-
-        <div class="name cont">
-            <?= $matela["marque"] ?>
-        </div>
-
-        <div class="dimensions cont">
-            <p><?= $matela["dimension"] ?></p>
-        </div>
-
-        <div class="prix cont-prix">
-            <p class="nopromo"><?= $matela["prix"] ?>€</p>
-            <p class="promo"><?= $matela["prix_promo"] ?>€</p>
-
-        </div>
-
-    </div>
-
+    </a>
 <?php
 }
 ?>
+<a href="verifs.php?id=">Liens test</a>
 <div class="text">
     <h1>Vous y découvrirez toutes nos dimensions :</h1>
     <p>90 X 190, 140 X 190, 160 X 200, 180 X 200, 200 X 200</p>
